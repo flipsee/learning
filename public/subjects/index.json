@@ -1,0 +1,13 @@
+[
+    {
+      "id": "my-binatang",
+      "name": "my-binatang",
+      "description": "Binatang in Malay language",
+      "category": "Malay",
+      "tags": ["Malay", "Animal"],
+      "url": "http://localhost:3000/learning/subjects/binatang.json",
+      "length": 5,
+      "language": "my",
+      "languageCategory": "my"
+    }
+]

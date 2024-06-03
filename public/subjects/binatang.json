@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "type": 0,
+        "question": "anjing", 
+        "remark": "dog"
+    },
+    {
+        "id": 2,
+        "type": 0,
+        "question": "kucing", 
+        "remark": "cat"
+    },
+    {
+        "id": 3,
+        "type": 0,
+        "question": "harimau", 
+        "remark": "tiger"
+    },
+    {
+        "id": 4,
+        "type": 0,
+        "question": "beruang", 
+        "remark": "bear"
+    },
+    {
+        "id": 5,
+        "type": 0,
+        "question": "burung", 
+        "remark": "bird"
+    }
+]
