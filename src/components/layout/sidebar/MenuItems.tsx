@@ -1,9 +1,4 @@
-import {
-  IconHome,
-  IconAbacus,
-  IconAbc,
-  IconCards,
-} from "@tabler/icons-react";
+import { IconHome, IconAbacus, IconAbc, IconCards } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
 
@@ -18,7 +13,7 @@ export type MenuitemType = {
 const Menuitems: MenuitemType[] = [
   {
     id: uniqueId(),
-    title: "Dashboard",
+    title: "Home",
     icon: IconHome,
     href: "/",
   },
@@ -39,7 +34,7 @@ const Menuitems: MenuitemType[] = [
     title: "Flash Cards (WIP)",
     icon: IconCards,
     href: "/flashCards",
-  },  
+  },
 ];
 
 export default Menuitems;

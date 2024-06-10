@@ -1,6 +1,9 @@
 import { FlashCard, QuizType } from "@/types/types";
 import { useState } from "react";
 
+/**
+ * helper for UseState with 3rd param of reset
+ */
 export const useInput = (initialValue: any) => {
   const [value, setValue] = useState(initialValue);
   return [value, (e: any) => setValue(e), () => setValue(initialValue)];
@@ -12,6 +15,9 @@ export const generateRandomNumber = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
+/**
+ * export json object to file
+ */
 export const exportJSON = (obj: object, filename: string) => {
   const blob = new Blob([JSON.stringify(obj, null, 2)], {
     type: "application/json",
@@ -152,6 +158,7 @@ export const getRandomQuestionFromDeck = (
     ? deck[Math.floor(Math.random() & deck.length)]
     : null;
 };
+
 export const sortDeckbyField = (
   deck: FlashCard[],
   field: string
@@ -170,4 +177,10 @@ export const sortDeckbyField = (
     return 0;
   });
   return null;
+};
+
+export const updateLastCardinDeck = (card: FlashCard, deck: FlashCard[]) => {
+  let tempDeck = deck;
+  tempDeck.pop();
+  return [...tempDeck, card];
 };

@@ -15,31 +15,32 @@ import {
   Slider,
 } from "@mui/material";
 import FormHelperText from "@mui/material/FormHelperText";
-import BaseCard from "@/app/(Learning)/components/_shared/BaseCard";
+import BaseCard from "@/components/BaseCard";
 import DoneIcon from "@mui/icons-material/Done";
 import FaceRetouchingNaturalIcon from "@mui/icons-material/FaceRetouchingNatural";
 import CoronavirusIcon from "@mui/icons-material/Coronavirus";
 import DangerousIcon from "@mui/icons-material/Dangerous";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import StopCircleIcon from "@mui/icons-material/StopCircle";
+import LoopIcon from "@mui/icons-material/Loop";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import Typography from "@mui/material/Typography";
-import RadioGroupRating from "@/app/(Learning)/components/_rating/RadioGroupRating";
+import RadioGroupRating from "@/components/RadioGroupRating";
 
 //Common-Start
 import { Mode, LearningSession, Attempt, FlashCard } from "@/types/types";
 import {
-  generateRandomNumber,
-  generateNewMathQuestion,
   exportJSON,
   useInput,
   updateCardScore,
   evaluateQuiz,
   getRandomQuestionFromDeck,
 } from "@/common/helpers";
+
+import { RotateCard } from "@/common/styles";
 //Common-End
 
 let sampleDeck = [
@@ -288,24 +289,10 @@ const FlashCards = () => {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  {
+                  {/* {
                     //Quiz Mode, render the Choices
-                    mode == Mode.Quiz &&
-                      question &&
-                      question.choices &&
-                      question.choices.map(function (value, i) {
-                        return (
-                          <Button
-                            key={i}
-                            variant="contained"
-                            size="small"
-                            onClick={() => handleChoiceOnClick(value)}
-                          >
-                            {value}
-                          </Button>
-                        );
-                      })
-                  }
+                    mode == Mode.Quiz && question && <LoopIcon />
+                  } */}
 
                   {
                     //Study Mode, render the Rating

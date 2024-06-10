@@ -13,7 +13,7 @@ import {
   Switch,
 } from "@mui/material";
 
-import BaseCard from "@/app/(Learning)/components/_shared/BaseCard";
+import BaseCard from "@/components/BaseCard";
 import DoneIcon from "@mui/icons-material/Done";
 import FaceRetouchingNaturalIcon from "@mui/icons-material/FaceRetouchingNatural";
 import CoronavirusIcon from "@mui/icons-material/Coronavirus";
@@ -25,7 +25,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import Typography from "@mui/material/Typography";
-import RadioGroupRating from "@/app/(Learning)/components/_rating/RadioGroupRating";
+import RadioGroupRating from "@/components/RadioGroupRating";
 
 //Common-Start
 import {
